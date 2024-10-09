@@ -1,0 +1,12 @@
+{
+    "name": "projeto",
+    "version": "1.0.0",
+    "description": "Sistema para gestão de aeronaves e planos de voo.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "bycontract": "^1.0.0"
+    }
+}
