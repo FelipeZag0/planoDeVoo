@@ -1,60 +1,56 @@
-Projeto de Gestão de Aeronaves e Planos de Voo
+# README do Projeto de Gestão de Aeronaves e Planos de Voo
 
-Descrição
+## Descrição
 Este projeto é um sistema para gestão de aeronaves e planos de voo, desenvolvido em JavaScript. O sistema permite gerenciar pilotos, aeronaves, aerovias e planos de voo, utilizando princípios de orientação a objetos.
 
+## Funcionalidades
+- **Gestão de Aeronaves**: Cadastro e classificação de aeronaves (Particular, Comercial, Passageiros, Carga).
+- **Gestão de Pilotos**: Registro de pilotos com validação de habilitação ativa.
+- **Gestão de Aerovias**: Definição de rotas aéreas com origem, destino e tamanho.
+- **Gestão de Planos de Voo**: Criação e monitoramento de planos de voo com detalhes como horário, altitude e slots.
 
-Estrutura do Projeto
-O projeto é composto pelos seguintes arquivos e pastas:
+## Estrutura do Projeto
+```
+.
+├── aeronave.js            # Classes relacionadas a aeronaves
+├── aerovia.js             # Classes e serviços para aerovias
+├── piloto.js              # Classe Piloto
+├── planoDeVoo.js          # Classe PlanoDeVoo e serviços
+├── servicos.js            # Serviços para gerenciamento
+├── index.js               # Arquivo principal de execução
+├── package.json           # Configuração do projeto e dependências
+├── tests/                 # Testes unitários
+│   ├── aeronave.test.js
+│   ├── aerovia.test.js
+│   ├── piloto.test.js
+│   └── planoDeVoo.test.js
+└── README.md              # Documentação do projeto
+```
 
-    aeronave.js: Define classes relacionadas a aeronaves, como Aeronave, AeronaveParticular, AeronaveComercial, AeronavePassageiros e AeronaveCarga.
-    aerovia.js: Define a classe Aerovia e o serviço ServicoAerovias para gerenciamento de aerovias.
-    piloto.js: Define a classe Piloto.
-    planoDeVoo.js: Define a classe PlanoDeVoo e o serviço ServicoPlanos para gerenciamento de planos de voo.
-    servicos.js: Define os serviços ServicoPilotos, ServicoAeronaves, ServicoAerovias e ServicoPlanos para gerenciar pilotos, aeronaves, aerovias e planos de voo, respectivamente.
-    index.js: Arquivo principal para execução do sistema e demonstração de uso das classes e serviços.
-    package.json: Gerencia dependências do projeto e scripts de execução.
-    tests/: Pasta contendo arquivos de teste para validar o funcionamento das classes e serviços.
+## Instalação
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/FelipeZag0/planoDeVoo.git
+   ```
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
+## Uso
+Execute o projeto com o seguinte comando:
+```bash
+npm start
+```
 
-Instalação
-Para executar o projeto, siga os passos abaixo:
+O arquivo `index.js` contém exemplos de uso do sistema, incluindo a criação de instâncias de pilotos, aeronaves, aerovias e planos de voo.
 
-    Instale as dependências:
-    npm install
+## Testes
+Para executar os testes unitários e validar o funcionamento das classes e serviços, utilize:
+```bash
+npm test
+```
 
-    Execute o projeto:
-    npm start
+## Dependências
+- [bycontract](https://www.npmjs.com/package/bycontract): Validação de contratos em JavaScript.
 
-Uso
-    O arquivo index.js contém um exemplo de uso do sistema. Ele cria instâncias de pilotos, aeronaves, aerovias e planos de voo, e utiliza os serviços para exibir informações no console.
-
-Testes
-    Os testes do projeto estão localizados na pasta tests/. Esses testes garantem que as classes e métodos funcionem conforme esperado. Execute os testes para verificar a integridade do sistema.
-
-Estrutura de Pastas e Arquivos
-aeronave.js
-    Classes: Aeronave, AeronaveParticular, AeronaveComercial, AeronavePassageiros, AeronaveCarga
-
-aerovia.js
-    Classe: Aerovia
-    Função: ServicoAerovias
-
-piloto.js
-    Classe: Piloto
-
-planoDeVoo.js
-    Classe: PlanoDeVoo
-    Função: ServicoPlanos
-
-servicos.js
-    Funções: ServicoPilotos, ServicoAeronaves, ServicoAerovias, ServicoPlanos
-
-index.js
-    Exemplo de uso
-
-package.json
-    Dependências e scripts
-
-tests/
-    Testes de unidade para as classes e serviços
