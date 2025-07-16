@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { Piloto } from '../piloto.js';
+import { Piloto } from '../src/piloto.js';
 
 describe('Piloto', () => {
     // Testa a criação de um Piloto com valores corretos
@@ -13,6 +13,6 @@ describe('Piloto', () => {
     // Testa o lançamento de erro se a habilitação do Piloto não estiver ativa
     it('deve lançar erro se a habilitação do Piloto não estiver ativa', () => {
         const piloto = new Piloto('67890', 'Maria Oliveira', false);
-        expect(() => piloto.habilitacaoAtiva).to.throw('Habilitação inativa. Voo cancelado.');
+        expect(() => piloto.habilitacaoAtiva).to.throw('Piloto Maria Oliveira (67890) com habilitação inativa! Voo cancelado.');
     });
 });

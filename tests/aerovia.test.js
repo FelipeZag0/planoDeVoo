@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { Aerovia, ServicoAerovias } from '../aerovia.js';
+import { Aerovia, ServicoAerovias } from '../src/aerovia.js';
 
 describe('Aerovia', () => {
     // Testa a criação de uma Aerovia com valores corretos

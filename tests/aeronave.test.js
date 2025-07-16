@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { AeronaveParticular, AeronavePassageiros, AeronaveCarga } from '../aeronave.js';
+import { AeronaveParticular, AeronavePassageiros, AeronaveCarga } from '../src/aeronave.js';
 
 describe('Aeronave', () => {
     // Testa a criação de uma AeronaveParticular com valores corretos
@@ -9,7 +9,7 @@ describe('Aeronave', () => {
         expect(aeronave.velocidadeCruzeiro).to.equal(800);
         expect(aeronave.autonomia).to.equal(1500);
         expect(aeronave.respManutencao).to.equal('Manutenção A');
-        expect(aeronave.tipo()).to.equal('Aeronave Particular Pequeno Porte');
+        expect(aeronave.tipo).to.equal('Aeronave Particular Pequeno Porte');
     });
 
     // Testa a criação de uma AeronavePassageiros com valores corretos
@@ -20,7 +20,7 @@ describe('Aeronave', () => {
         expect(aeronave.autonomia).to.equal(3000);
         expect(aeronave.nomeCIA).to.equal('Companhia XYZ');
         expect(aeronave.maxPassageiros).to.equal(180);
-        expect(aeronave.tipo()).to.equal('Aeronave de Passageiros');
+        expect(aeronave.tipo).to.equal('Aeronave de Passageiros');
     });
 
     // Testa a criação de uma AeronaveCarga com valores corretos
@@ -31,6 +31,6 @@ describe('Aeronave', () => {
         expect(aeronave.autonomia).to.equal(2500);
         expect(aeronave.nomeCIA).to.equal('Companhia ABC');
         expect(aeronave.pesoMax).to.equal(10000);
-        expect(aeronave.tipo()).to.equal('Aeronave de Carga');
+        expect(aeronave.tipo).to.equal('Aeronave de Carga');
     });
 });

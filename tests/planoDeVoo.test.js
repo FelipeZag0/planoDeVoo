@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { PlanoDeVoo, ServicoPlanos } from '../planoDeVoo.js';
+import { PlanoDeVoo, ServicoPlanos } from '../src/planoDeVoo.js';
 
 describe('PlanoDeVoo', () => {
     // Testa a criação de um PlanoDeVoo com valores corretos
