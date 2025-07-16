@@ -86,6 +86,10 @@ projeto-gerenciamento-voos/
 └── README.md
 ```
 
+## Screenshots
+
+![Testes bem sucedidos](./github/screenshots/testes.png)
+
 ## Funcionalidades Principais
 
 - **Gestão de Pilotoss**:
